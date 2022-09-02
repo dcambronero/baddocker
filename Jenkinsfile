@@ -86,7 +86,7 @@ pipeline {
           }
         stage('install Spectral') {
       steps {
-        sh "curl -L 'https://get.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN2' | sh"
+        sh "curl -L 'https://cloudguard-us.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN2' | sh"
       }
     }
     stage('scan for issues') {
